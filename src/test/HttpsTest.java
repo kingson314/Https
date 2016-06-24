@@ -4,9 +4,11 @@ import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.security.cert.X509Certificate;
+
 import javax.net.ssl.SSLContext;
 import javax.net.ssl.TrustManager;
 import javax.net.ssl.X509TrustManager;
+
 import org.apache.http.HttpResponse;
 import org.apache.http.HttpVersion;
 import org.apache.http.client.HttpClient;
@@ -27,15 +29,6 @@ import org.apache.http.params.HttpProtocolParams;
 public class HttpsTest {
 	public static void main(String[] args) throws Exception {
 		String url = "https://www.cpes-sipo.net/txnCaseListPage.do";
-		// // 获得密匙库
-		// KeyStore trustStore =
-		// KeyStore.getInstance(KeyStore.getDefaultType());
-		// FileInputStream instream = new FileInputStream(new
-		// File(" D:/zzaa "));
-		// // 密匙库的密码
-		// trustStore.load(instream, " 123456 ".toCharArray());
-		// // 注册密匙库
-
 		X509TrustManager tm = new X509TrustManager() {
 			public void checkClientTrusted(X509Certificate[] xcs, String string) {
 			}

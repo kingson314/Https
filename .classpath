@@ -12,5 +12,6 @@
 	<classpathentry kind="lib" path="lib/httpClient/httpmime-4.5.jar"/>
 	<classpathentry kind="lib" path="lib/httpClient/jna-4.1.0.jar"/>
 	<classpathentry kind="lib" path="lib/httpClient/jna-platform-4.1.0.jar"/>
+	<classpathentry kind="lib" path="lib/log4j/log4j-1.2.14.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
