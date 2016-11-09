@@ -9,7 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class SeleniumJs extends Thread  {
 	static{
-		System.getProperties().setProperty("webdriver.chrome.driver", "E:\\DevTool\\chromedriver_x64.exe"); //这个参数就是【chrome驱动器的位置】
+		System.getProperties().setProperty("webdriver.chrome.driver", "E:\\AppData\\chromedriver_x64.exe"); //这个参数就是【chrome驱动器的位置】
 	}
 	private int index;
 	private String url;

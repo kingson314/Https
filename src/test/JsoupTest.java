@@ -9,7 +9,7 @@ import org.jsoup.select.Elements;
 public class JsoupTest {
 	public static void main(String[] args) throws IOException {
 		long now = System.currentTimeMillis();
-		String url = "https://www.cpes-sipo.net/txnCaseListPage.do";
+		String url = "https://www.dailyfx.com.hk/inc/cal_qry.php?symbol=rmb-usd-eur-jpy-gbp-chf-aud-cad-nzd&section=event-holiday-figure&sdate=2016-11-01&edate=2016-11-01";
 		getPatent(url);
 		System.out.println(System.currentTimeMillis() - now);
 	}
